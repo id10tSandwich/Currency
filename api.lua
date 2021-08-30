@@ -106,7 +106,7 @@ function money_transection(name, player, money)
         return
     end
 
-    if type(tonumber(money)) ~= "number" or money == "nan" then
+    if type(tonumber(money)) ~= "number" or money == "nan" or money == "-nan" then
         minetest.chat_send_player(name, colorize("#00ffff", "[Server] This is not a number"))
         return  
     end 
@@ -114,6 +114,11 @@ function money_transection(name, player, money)
     --Check if the user has enought money
     if tonumber(money) > tonumber(own_bank) then
         minetest.chat_send_player(name, colorize("#ff0000", "[Server] You don't have enought money to sent "..money.."$ you currently have "..own_bank.."$"))
+        return
+    end
+
+    if tonumber(money) =< 0 then
+        minetest.chat_send_player(name, colorize("ff0000", "[Server] Your need a minimum of 1"..coin_name.." to send someone money with /pay"))
         return
     end
 
