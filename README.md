@@ -35,3 +35,4 @@ Default Settings:
 --money_name = $
 --amount_join = 0
 Change them example /setting money_name €
+````
