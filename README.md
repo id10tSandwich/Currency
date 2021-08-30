@@ -29,7 +29,7 @@ minetest.register_chatcommand("get_coin", {
 ````
 
 # Settings ingame
-***Settings can be done ingame by using ````/setting <setting> <new setting>````
+***Settings can be done ingame by using ````/setting <setting> <new setting>````***
 ````
 Default Settings:
 --money_name = $
