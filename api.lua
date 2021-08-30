@@ -117,7 +117,7 @@ function money_transection(name, player, money)
         return
     end
 
-    if tonumber(money) =< 0 then
+    if tonumber(money) <= 0 then
         minetest.chat_send_player(name, colorize("ff0000", "[Server] Your need a minimum of 1"..coin_name.." to send someone money with /pay"))
         return
     end
