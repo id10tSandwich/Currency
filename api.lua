@@ -106,7 +106,7 @@ function money_transection(name, player, money)
         return
     end
 
-    if type(tonumber(money)) ~= "number" or money == "nan" or money == "-nan" then
+    if type(tonumber(money)) ~= "number" or money == "nan" or money == "-nan" or money == "+nan" then
         minetest.chat_send_player(name, colorize("#00ffff", "[Server] This is not a number"))
         return  
     end 
