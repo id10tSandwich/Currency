@@ -27,3 +27,11 @@ minetest.register_chatcommand("get_coin", {
 
 --Both gonna do the same it dosn't matter if it's a chatmod or a block you mine or monster you kill :)
 ````
+
+# Settings ingame
+***Settings can be done ingame by using ````/setting <setting> <new setting>````
+````
+Default Settings:
+--money_name = $
+--amount_join = 0
+Change them example /setting money_name €````
