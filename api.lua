@@ -77,9 +77,9 @@ minetest.register_on_joinplayer(function(player)
     local name = player and player:get_player_name()
     if data_money[name] == nil then
         local setting_data = load_money_settings()
-        local money_name = setting_data[money_name] or "$"
-        local amount_join = setting_data[amount_join] or 0
-        data_money[name] = amount
+        local money_name = setting_data["money_name"] or "$"
+        local amount_join = setting_data["amount_join"] or 0
+        data_money[name] = amount 
         minetest.chat_send_player(name, colorize("#c3ee3e", "[Server] Added "..amount_join..""..money_name.." to your bank"))
         save_player_money(data_money)
     end 
@@ -125,7 +125,7 @@ function money_transection(name, player, money)
     local own_new_amount = tonumber(own_bank - tonumber(money))
     local player_new_amount = tonumber(player_bank + tonumber(money)) 
     ----------
-    minetest.chat_send_player(player, colorize("#c3ee3e", "[Server] You received "..money..""..coin_name.." from "..player))  
+    minetest.chat_send_player(player, colorize("#c3ee3e", "[Server] You received "..money..""..coin_name.." from "..name))  
     minetest.chat_send_player(name, colorize("#c3ee3e", "[Server] You successfully send "..money..""..coin_name.." to "..player))
     ----------
     data[name] = own_new_amount
