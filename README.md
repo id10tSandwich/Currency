@@ -1,7 +1,7 @@
 # Currency
 ## Made by xXNicoXx
 ### Minetest mod
-Minetest currency mod (api good write for modders and codders) [WIP] Release 1.1.0
+Minetest currency mod (api good write for modders and codders) [WIP] Release 1.1.2
 
 # EXAMPLE OF HOW TO USE THIS API
 ***Use ````get_money(name, amount)```` to add money to someones acc***
