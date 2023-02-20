@@ -36,3 +36,4 @@ Default Settings:
 --amount_join = 0
 Change them example /setting money_name €
 ````
+[WIP]
