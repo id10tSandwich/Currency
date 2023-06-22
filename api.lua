@@ -106,7 +106,7 @@ function money_transection(name, player, money)
         return
     end
     if name == player then
-        minetest.chat_send_player(name, colorize("#ff0000", "[Server] Error you can't send your self money")
+        minetest.chat_send_player(name, colorize("#ff0000", "[Server] Error you can't send your self money"))
         return
     end
         
